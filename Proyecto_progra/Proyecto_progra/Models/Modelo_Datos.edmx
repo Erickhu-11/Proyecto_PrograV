@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ConciertosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Concierto">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Nombre_Banda" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Genero_Musical" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Fecha_Concierto" Type="date" Nullable="false" />
+          <Property Name="Hora_Concierto" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Pais" Type="varchar" MaxLength="47" Nullable="false" />
+          <Property Name="Direccion_Concierto" Type="varchar" MaxLength="168" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ConciertosModelStoreContainer">
+          <EntitySet Name="Concierto" EntityType="Self.Concierto" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ConciertosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Concierto">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Nombre_Banda" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Genero_Musical" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Fecha_Concierto" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Hora_Concierto" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Pais" Type="String" MaxLength="47" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Direccion_Concierto" Type="String" MaxLength="168" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ConciertosEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Concierto" EntityType="Self.Concierto" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ConciertosModelStoreContainer" CdmEntityContainer="ConciertosEntities">
+          <EntitySetMapping Name="Concierto">
+            <EntityTypeMapping TypeName="ConciertosModel.Concierto">
+              <MappingFragment StoreEntitySet="Concierto">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nombre_Banda" ColumnName="Nombre_Banda" />
+                <ScalarProperty Name="Genero_Musical" ColumnName="Genero_Musical" />
+                <ScalarProperty Name="Fecha_Concierto" ColumnName="Fecha_Concierto" />
+                <ScalarProperty Name="Hora_Concierto" ColumnName="Hora_Concierto" />
+                <ScalarProperty Name="Pais" ColumnName="Pais" />
+                <ScalarProperty Name="Direccion_Concierto" ColumnName="Direccion_Concierto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
