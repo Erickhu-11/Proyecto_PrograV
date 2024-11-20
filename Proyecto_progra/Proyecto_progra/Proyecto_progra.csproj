@@ -152,6 +152,7 @@
       <DependentUpon>Modelo_Datos.edmx</DependentUpon>
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +226,8 @@
     <Content Include="obj\Debug\edmxResourcesToEmbed\Models\Modelo_Datos.msl" />
     <Content Include="obj\Debug\edmxResourcesToEmbed\Models\Modelo_Datos.ssdl" />
     <Content Include="obj\Debug\Proyecto_progra.csproj.AssemblyReference.cache" />
+    <Content Include=".vs\Proyecto_progra.csproj.dtbcache.json" />
+    <Content Include="obj\Release\Proyecto_progra.csproj.AssemblyReference.cache" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
