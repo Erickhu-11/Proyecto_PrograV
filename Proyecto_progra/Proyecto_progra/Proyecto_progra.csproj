@@ -128,7 +128,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -171,29 +170,29 @@
     <Content Include="bin\System.Web.WebPages.dll" />
     <Content Include="bin\System.Web.WebPages.Razor.dll" />
     <Content Include="bin\WebGrease.dll" />
-    <Content Include="Content\bootstrap-grid.css" />
-    <Content Include="Content\bootstrap-grid.min.css" />
-    <Content Include="Content\bootstrap-grid.rtl.css" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css" />
-    <Content Include="Content\bootstrap-reboot.css" />
-    <Content Include="Content\bootstrap-reboot.min.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
-    <Content Include="Content\bootstrap-utilities.css" />
-    <Content Include="Content\bootstrap-utilities.min.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.rtl.css" />
-    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\libs\bootstrap-grid.css" />
+    <Content Include="Content\libs\bootstrap-grid.min.css" />
+    <Content Include="Content\libs\bootstrap-grid.rtl.css" />
+    <Content Include="Content\libs\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\libs\bootstrap-reboot.css" />
+    <Content Include="Content\libs\bootstrap-reboot.min.css" />
+    <Content Include="Content\libs\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\libs\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\libs\bootstrap-utilities.css" />
+    <Content Include="Content\libs\bootstrap-utilities.min.css" />
+    <Content Include="Content\libs\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\libs\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\libs\bootstrap.css" />
+    <Content Include="Content\libs\bootstrap.min.css" />
+    <Content Include="Content\libs\bootstrap.rtl.css" />
+    <Content Include="Content\libs\bootstrap.rtl.min.css" />
+    <Content Include="Content\libs\Site.css" />
     <Content Include="Content\css\styles.css" />
     <Content Include="Content\imgs\icon1.png" />
     <Content Include="Content\imgs\icon2.png" />
     <Content Include="Content\imgs\icon3.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Models\Modelo_Datos.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Modelo_Datos.Context.cs</LastGenOutput>
@@ -228,6 +227,22 @@
     <Content Include="obj\Debug\Proyecto_progra.csproj.AssemblyReference.cache" />
     <Content Include=".vs\Proyecto_progra.csproj.dtbcache.json" />
     <Content Include="obj\Release\Proyecto_progra.csproj.AssemblyReference.cache" />
+    <Content Include="Content\libs\bootstrap-grid.css.map" />
+    <Content Include="Content\libs\bootstrap-grid.min.css.map" />
+    <Content Include="Content\libs\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\libs\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\libs\bootstrap-reboot.css.map" />
+    <Content Include="Content\libs\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\libs\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\libs\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\libs\bootstrap-utilities.css.map" />
+    <Content Include="Content\libs\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\libs\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\libs\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\libs\bootstrap.css.map" />
+    <Content Include="Content\libs\bootstrap.min.css.map" />
+    <Content Include="Content\libs\bootstrap.rtl.css.map" />
+    <Content Include="Content\libs\bootstrap.rtl.min.css.map" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -250,31 +265,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Main\Mainpage.cshtml" />
+    <Content Include="Views\Main\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.rtl.min.css.map" />
-    <Content Include="Content\bootstrap.rtl.css.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
-    <Content Include="Content\bootstrap-utilities.min.css.map" />
-    <Content Include="Content\bootstrap-utilities.css.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-grid.rtl.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />

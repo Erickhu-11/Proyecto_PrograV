@@ -1,12 +1,92 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\onedrive\\documentos\\github\\proyecto_prograv\\proyecto_progra\\proyecto_progra\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\onedrive\\documentos\\github\\proyecto_prograv\\proyecto_progra\\proyecto_progra\\views\\main\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\onedrive\\documentos\\github\\proyecto_prograv\\proyecto_progra\\proyecto_progra\\views\\main\\mainpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\mainpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\onedrive\\documentos\\github\\proyecto_prograv\\proyecto_progra\\proyecto_progra\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Proyecto_progra\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T20:57:15.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Login.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\Login.cshtml",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Login.cshtml",
+              "RelativeToolTip": "Proyecto_progra\\Views\\Main\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T20:49:19.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Mainpage.cshtml",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
+              "RelativeToolTip": "Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T20:30:33.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainController.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Controllers\\MainController.cs",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Controllers\\MainController.cs",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Controllers\\MainController.cs",
+              "RelativeToolTip": "Proyecto_progra\\Controllers\\MainController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T20:27:20.571Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

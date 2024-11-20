@@ -9,12 +9,11 @@ namespace Proyecto_progra.Controllers
     public class MainController : Controller
     {
         // GET: Main
-        public ActionResult Index()
+        public ActionResult MainPage()
         {
             return View();
         }
-
-        public ActionResult MainPage()
+        public ActionResult Login()
         {
             return View();
         }
