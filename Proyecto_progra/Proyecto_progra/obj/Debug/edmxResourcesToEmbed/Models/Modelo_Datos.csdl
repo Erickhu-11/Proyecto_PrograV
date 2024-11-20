@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConciertosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Concierto">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Banda" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Genero_Musical" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha_Concierto" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Hora_Concierto" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Pais" Type="String" MaxLength="47" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Direccion_Concierto" Type="String" MaxLength="168" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ConciertosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Concierto" EntityType="Self.Concierto" />
+  </EntityContainer>
+</Schema>
