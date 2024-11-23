@@ -16,10 +16,6 @@ body {
     max-width: 500px;
 }
 
-.principal-text h2{
-
-}
-
 .main-content {
     margin-left: 100px;
     padding: 20px;
@@ -126,4 +122,80 @@ body {
     padding: 10px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.main h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.Login-box button {
+    font-size: 36px;
+    border-radius: 20px;
+    color: #9f7f54;
+    background-color: #0f0c0c;
+    cursor: pointer;
+    width: 250px;
+}
+
+.Login-box{
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.username {
+    position: relative;
+    background-color: #0f0c0c;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 90%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.username input{
+    width: 250px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #9f7f54;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.username input::placeholder{
+    color: #9f7f54;
+}
+
+.password {
+    text-align: center;
+    position: relative;
+    background-color: #0f0c0c;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 90%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.password input{
+    width: 250px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #9f7f54;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.password input::placeholder{
+    color: #9f7f54;
 }
