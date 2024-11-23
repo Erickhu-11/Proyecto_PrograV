@@ -16,7 +16,11 @@ namespace Proyecto_progra
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
+<<<<<<< Updated upstream
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+=======
+                defaults: new { controller = "Main", action = "MainPage", id = UrlParameter.Optional }
+>>>>>>> Stashed changes
             );
         }
     }

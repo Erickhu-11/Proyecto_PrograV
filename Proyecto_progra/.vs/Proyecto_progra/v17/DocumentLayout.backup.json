@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\",
+<<<<<<< Updated upstream
   "Documents": [],
+=======
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\onedrive\\documentos\\github\\proyecto_prograv\\proyecto_progra\\proyecto_progra\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\onedrive\\documentos\\github\\proyecto_prograv\\proyecto_progra\\proyecto_progra\\views\\main\\mainpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\mainpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\proyecto_progra\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\onedrive\\documentos\\github\\proyecto_prograv\\proyecto_progra\\proyecto_progra\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\proyecto_progra\\views\\main\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\proyecto_progra\\content\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\content\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\proyecto_progra\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+>>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +42,112 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+=======
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Proyecto_progra\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Proyecto_progra\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T19:59:09.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Web.config",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Web.config",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Web.config",
+              "RelativeToolTip": "Proyecto_progra\\Web.config",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-23T19:58:31.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Content\\css\\styles.css",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Content\\css\\styles.css",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Content\\css\\styles.css",
+              "RelativeToolTip": "Proyecto_progra\\Content\\css\\styles.css",
+              "ViewState": "AgIAADsAAAAAAAAAAAAUwGEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-20T21:17:04.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Proyecto_progra\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T20:57:15.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mainpage.cshtml",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
+              "RelativeToolTip": "Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T20:30:33.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainController.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Controllers\\MainController.cs",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Controllers\\MainController.cs",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Controllers\\MainController.cs",
+              "RelativeToolTip": "Proyecto_progra\\Controllers\\MainController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T20:27:20.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Login.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\Login.cshtml",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\Documentos\\GitHub\\Proyecto_PrograV\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Login.cshtml",
+              "RelativeToolTip": "Proyecto_progra\\Views\\Main\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T20:49:19.821Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             }
           ]
         }
