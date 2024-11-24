@@ -19,6 +19,10 @@ namespace Proyecto_progra.Controllers
         }
 
 
+        public ActionResult CrearConcierto()
+        {
+            return View();
+        }
 
 
     }

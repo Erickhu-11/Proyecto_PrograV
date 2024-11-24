@@ -148,7 +148,6 @@ body {
 .Login-box{
     display: flex;
     align-items: center;
-    display: flex;
     flex-direction: column;
     gap: 15px;
 }
@@ -198,4 +197,47 @@ body {
 
 .password input::placeholder{
     color: #9f7f54;
+}
+
+
+.main-crear {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 100px;
+    gap: 15px;
+}
+
+.main-crear input::placeholder{
+      color: #9f7f54;
+}
+
+.bubble {
+    position: relative;
+    background-color: #0f0c0c;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 90%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+}
+
+.main-crear input {
+    width: 370px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #9f7f54;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.b{
+    font-size: 25px;
+    border-radius: 20px;
+    color: #9f7f54;
+    background-color: #0f0c0c;
+    cursor: pointer;
+    width: 200px;
 }
