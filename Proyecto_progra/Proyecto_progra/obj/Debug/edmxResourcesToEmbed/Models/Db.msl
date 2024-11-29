@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ConciertosModelStoreContainer" CdmEntityContainer="ConciertosEntities1">
+    <EntitySetMapping Name="Concierto">
+      <EntityTypeMapping TypeName="ConciertosModel.Concierto">
+        <MappingFragment StoreEntitySet="Concierto">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nombre_Banda" ColumnName="Nombre_Banda" />
+          <ScalarProperty Name="Genero_Musical" ColumnName="Genero_Musical" />
+          <ScalarProperty Name="Fecha_Concierto" ColumnName="Fecha_Concierto" />
+          <ScalarProperty Name="Hora_Concierto" ColumnName="Hora_Concierto" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+          <ScalarProperty Name="Direccion_Concierto" ColumnName="Direccion_Concierto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="ConciertosModel.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="IDUSUARIO" ColumnName="IDUSUARIO" />
+          <ScalarProperty Name="CORREO" ColumnName="CORREO" />
+          <ScalarProperty Name="CLAVE" ColumnName="CLAVE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_REGISTRARUSUARIO" FunctionName="ConciertosModel.Store.SP_REGISTRARUSUARIO" />
+    <FunctionImportMapping FunctionImportName="SP_VALIDARUSUARIO" FunctionName="ConciertosModel.Store.SP_VALIDARUSUARIO" />
+  </EntityContainerMapping>
+</Mapping>
