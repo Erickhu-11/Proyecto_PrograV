@@ -1,4 +1,4 @@
-﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\erick\OneDrive\Documentos\GitHub\Proyecto_PrograV\Proyecto_progra\Proyecto_progra\Models\Modelo_Datos.edmx'. 
+﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\erick\source\repos\Proyecto_Progra\Proyecto_Progra\Proyecto_progra\Models\Db.edmx'. 
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.

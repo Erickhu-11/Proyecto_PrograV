@@ -17,8 +17,27 @@
           <Property Name="Pais" Type="varchar" MaxLength="47" Nullable="false" />
           <Property Name="Direccion_Concierto" Type="varchar" MaxLength="168" Nullable="false" />
         </EntityType>
+        <EntityType Name="USUARIO">
+          <Key>
+            <PropertyRef Name="IDUSUARIO" />
+          </Key>
+          <Property Name="IDUSUARIO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CORREO" Type="varchar" MaxLength="100" />
+          <Property Name="CLAVE" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <Function Name="SP_REGISTRARUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CORREO" Type="varchar" Mode="In" />
+          <Parameter Name="CLAVE" Type="varchar" Mode="In" />
+          <Parameter Name="REGISTRADO" Type="bit" Mode="InOut" />
+          <Parameter Name="MENSAJE" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_VALIDARUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CORREO" Type="varchar" Mode="In" />
+          <Parameter Name="CLAVE" Type="varchar" Mode="In" />
+        </Function>
         <EntityContainer Name="ConciertosModelStoreContainer">
           <EntitySet Name="Concierto" EntityType="Self.Concierto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -37,15 +56,34 @@
           <Property Name="Pais" Type="String" MaxLength="47" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Direccion_Concierto" Type="String" MaxLength="168" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="ConciertosEntities" annotation:LazyLoadingEnabled="true">
+        <EntityType Name="USUARIO">
+          <Key>
+            <PropertyRef Name="IDUSUARIO" />
+          </Key>
+          <Property Name="IDUSUARIO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CORREO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CLAVE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ConciertosEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Concierto" EntityType="Self.Concierto" />
+          <EntitySet Name="USUARIO" EntityType="Self.USUARIO" />
+          <FunctionImport Name="SP_REGISTRARUSUARIO">
+            <Parameter Name="CORREO" Mode="In" Type="String" />
+            <Parameter Name="CLAVE" Mode="In" Type="String" />
+            <Parameter Name="REGISTRADO" Mode="InOut" Type="Boolean" />
+            <Parameter Name="MENSAJE" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_VALIDARUSUARIO" ReturnType="Collection(Int32)">
+            <Parameter Name="CORREO" Mode="In" Type="String" />
+            <Parameter Name="CLAVE" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ConciertosModelStoreContainer" CdmEntityContainer="ConciertosEntities">
+        <EntityContainerMapping StorageEntityContainer="ConciertosModelStoreContainer" CdmEntityContainer="ConciertosEntities1">
           <EntitySetMapping Name="Concierto">
             <EntityTypeMapping TypeName="ConciertosModel.Concierto">
               <MappingFragment StoreEntitySet="Concierto">
@@ -59,6 +97,17 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="USUARIO">
+            <EntityTypeMapping TypeName="ConciertosModel.USUARIO">
+              <MappingFragment StoreEntitySet="USUARIO">
+                <ScalarProperty Name="IDUSUARIO" ColumnName="IDUSUARIO" />
+                <ScalarProperty Name="CORREO" ColumnName="CORREO" />
+                <ScalarProperty Name="CLAVE" ColumnName="CLAVE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_REGISTRARUSUARIO" FunctionName="ConciertosModel.Store.SP_REGISTRARUSUARIO" />
+          <FunctionImportMapping FunctionImportName="SP_VALIDARUSUARIO" FunctionName="ConciertosModel.Store.SP_VALIDARUSUARIO" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConciertosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Concierto">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Banda" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Genero_Musical" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha_Concierto" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Hora_Concierto" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Pais" Type="String" MaxLength="47" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Direccion_Concierto" Type="String" MaxLength="168" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="IDUSUARIO" />
+    </Key>
+    <Property Name="IDUSUARIO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CORREO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CLAVE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="ConciertosEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Concierto" EntityType="Self.Concierto" />
+    <EntitySet Name="USUARIO" EntityType="Self.USUARIO" />
+    <FunctionImport Name="SP_REGISTRARUSUARIO">
+      <Parameter Name="CORREO" Mode="In" Type="String" />
+      <Parameter Name="CLAVE" Mode="In" Type="String" />
+      <Parameter Name="REGISTRADO" Mode="InOut" Type="Boolean" />
+      <Parameter Name="MENSAJE" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_VALIDARUSUARIO" ReturnType="Collection(Int32)">
+      <Parameter Name="CORREO" Mode="In" Type="String" />
+      <Parameter Name="CLAVE" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConciertosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Concierto">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Nombre_Banda" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Genero_Musical" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fecha_Concierto" Type="date" Nullable="false" />
+    <Property Name="Hora_Concierto" Type="time" Precision="7" Nullable="false" />
+    <Property Name="Pais" Type="varchar" MaxLength="47" Nullable="false" />
+    <Property Name="Direccion_Concierto" Type="varchar" MaxLength="168" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="IDUSUARIO" />
+    </Key>
+    <Property Name="IDUSUARIO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CORREO" Type="varchar" MaxLength="100" />
+    <Property Name="CLAVE" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <Function Name="SP_REGISTRARUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CORREO" Type="varchar" Mode="In" />
+    <Parameter Name="CLAVE" Type="varchar" Mode="In" />
+    <Parameter Name="REGISTRADO" Type="bit" Mode="InOut" />
+    <Parameter Name="MENSAJE" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="SP_VALIDARUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CORREO" Type="varchar" Mode="In" />
+    <Parameter Name="CLAVE" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="ConciertosModelStoreContainer">
+    <EntitySet Name="Concierto" EntityType="Self.Concierto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
