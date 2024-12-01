@@ -30,7 +30,7 @@ namespace Proyecto_progra.Controllers
         public ActionResult BorrarConcierto()
         {
             return View();
-        }
+        } 
 
 
 

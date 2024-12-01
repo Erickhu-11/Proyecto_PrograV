@@ -252,15 +252,15 @@ body {
     gap: 15px;
 }
 
-    .center input {
-        width: 370px;
-        border: none;
-        outline: none;
-        background: transparent;
-        color: #9f7f54;
-        font-size: 16px;
-        padding: 10px;
-    }
+.center input {
+    width: 370px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #9f7f54;
+    font-size: 16px;
+    padding: 10px;
+ }
 
 .center input::placeholder{
        color: #9f7f54;
