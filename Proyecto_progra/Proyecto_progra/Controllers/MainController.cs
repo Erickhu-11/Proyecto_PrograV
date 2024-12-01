@@ -27,6 +27,13 @@ namespace Proyecto_progra.Controllers
         {
             return View();
         }
+        public ActionResult BorrarConcierto()
+        {
+            return View();
+        } 
+
+
+
 
         [HttpPost]
 
@@ -75,4 +82,6 @@ namespace Proyecto_progra.Controllers
             }
         }
     }
+
+
 }

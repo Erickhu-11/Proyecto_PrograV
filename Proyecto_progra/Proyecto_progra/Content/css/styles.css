@@ -16,6 +16,7 @@ body {
     max-width: 500px;
 }
 
+
 .main-content {
     margin-left: 100px;
     padding: 20px;
@@ -240,4 +241,31 @@ body {
     background-color: #0f0c0c;
     cursor: pointer;
     width: 200px;
+}
+
+.center {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 100px;
+    gap: 15px;
+}
+
+.center input {
+    width: 370px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #9f7f54;
+    font-size: 16px;
+    padding: 10px;
+ }
+
+.center input::placeholder{
+       color: #9f7f54;
+}
+
+.principal-textB {
+    margin-left: 120px;
 }
