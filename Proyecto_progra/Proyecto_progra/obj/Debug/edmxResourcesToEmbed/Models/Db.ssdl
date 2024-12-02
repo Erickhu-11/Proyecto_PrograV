@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Nombre_Banda" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Genero_Musical" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Fecha_Concierto" Type="date" Nullable="false" />
@@ -20,6 +20,16 @@
     <Property Name="CORREO" Type="varchar" MaxLength="100" />
     <Property Name="CLAVE" Type="varchar" MaxLength="500" />
   </EntityType>
+  <Function Name="SP_REGISTRARCONCIERTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Nombre_Banda" Type="varchar" Mode="In" />
+    <Parameter Name="Genero_Musical" Type="varchar" Mode="In" />
+    <Parameter Name="Fecha_Concierto" Type="date" Mode="In" />
+    <Parameter Name="Hora_Concierto" Type="time" Mode="In" />
+    <Parameter Name="Pais" Type="varchar" Mode="In" />
+    <Parameter Name="Direccion_Concierto" Type="varchar" Mode="In" />
+    <Parameter Name="REGISTRADO" Type="bit" Mode="InOut" />
+    <Parameter Name="MENSAJE" Type="varchar" Mode="InOut" />
+  </Function>
   <Function Name="SP_REGISTRARUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="CORREO" Type="varchar" Mode="In" />
     <Parameter Name="CLAVE" Type="varchar" Mode="In" />

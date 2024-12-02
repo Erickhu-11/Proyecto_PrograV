@@ -4,12 +4,12 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ConciertosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ConciertosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Concierto">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Nombre_Banda" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Genero_Musical" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Fecha_Concierto" Type="date" Nullable="false" />
@@ -25,6 +25,16 @@
           <Property Name="CORREO" Type="varchar" MaxLength="100" />
           <Property Name="CLAVE" Type="varchar" MaxLength="500" />
         </EntityType>
+        <Function Name="SP_REGISTRARCONCIERTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Nombre_Banda" Type="varchar" Mode="In" />
+          <Parameter Name="Genero_Musical" Type="varchar" Mode="In" />
+          <Parameter Name="Fecha_Concierto" Type="date" Mode="In" />
+          <Parameter Name="Hora_Concierto" Type="time" Mode="In" />
+          <Parameter Name="Pais" Type="varchar" Mode="In" />
+          <Parameter Name="Direccion_Concierto" Type="varchar" Mode="In" />
+          <Parameter Name="REGISTRADO" Type="bit" Mode="InOut" />
+          <Parameter Name="MENSAJE" Type="varchar" Mode="InOut" />
+        </Function>
         <Function Name="SP_REGISTRARUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="CORREO" Type="varchar" Mode="In" />
           <Parameter Name="CLAVE" Type="varchar" Mode="In" />
@@ -39,8 +49,7 @@
           <EntitySet Name="Concierto" EntityType="Self.Concierto" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ConciertosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -77,6 +86,16 @@
             <Parameter Name="CORREO" Mode="In" Type="String" />
             <Parameter Name="CLAVE" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="SP_REGISTRARCONCIERTO">
+            <Parameter Name="Nombre_Banda" Mode="In" Type="String" />
+            <Parameter Name="Genero_Musical" Mode="In" Type="String" />
+            <Parameter Name="Fecha_Concierto" Mode="In" Type="DateTime" />
+            <Parameter Name="Hora_Concierto" Mode="In" Type="Time" />
+            <Parameter Name="Pais" Mode="In" Type="String" />
+            <Parameter Name="Direccion_Concierto" Mode="In" Type="String" />
+            <Parameter Name="REGISTRADO" Mode="InOut" Type="Boolean" />
+            <Parameter Name="MENSAJE" Mode="InOut" Type="String" />
+          </FunctionImport>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -108,6 +127,7 @@
           </EntitySetMapping>
           <FunctionImportMapping FunctionImportName="SP_REGISTRARUSUARIO" FunctionName="ConciertosModel.Store.SP_REGISTRARUSUARIO" />
           <FunctionImportMapping FunctionImportName="SP_VALIDARUSUARIO" FunctionName="ConciertosModel.Store.SP_VALIDARUSUARIO" />
+          <FunctionImportMapping FunctionImportName="SP_REGISTRARCONCIERTO" FunctionName="ConciertosModel.Store.SP_REGISTRARCONCIERTO" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

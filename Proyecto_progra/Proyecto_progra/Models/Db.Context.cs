@@ -28,7 +28,7 @@ namespace Proyecto_progra.Models
         }
     
         public virtual DbSet<Concierto> Concierto { get; set; }
-        public virtual DbSet<USUARIO> USUARIO { get; set; }
+        public virtual DbSet<Concierto> USUARIO { get; set; }
     
         public virtual int SP_REGISTRARUSUARIO(string cORREO, string cLAVE, ObjectParameter rEGISTRADO, ObjectParameter mENSAJE)
         {
@@ -54,6 +54,35 @@ namespace Proyecto_progra.Models
                 new ObjectParameter("CLAVE", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SP_VALIDARUSUARIO", cORREOParameter, cLAVEParameter);
+        }
+    
+        public virtual int SP_REGISTRARCONCIERTO(string nombre_Banda, string genero_Musical, Nullable<System.DateTime> fecha_Concierto, Nullable<System.TimeSpan> hora_Concierto, string pais, string direccion_Concierto, ObjectParameter rEGISTRADO, ObjectParameter mENSAJE)
+        {
+            var nombre_BandaParameter = nombre_Banda != null ?
+                new ObjectParameter("Nombre_Banda", nombre_Banda) :
+                new ObjectParameter("Nombre_Banda", typeof(string));
+    
+            var genero_MusicalParameter = genero_Musical != null ?
+                new ObjectParameter("Genero_Musical", genero_Musical) :
+                new ObjectParameter("Genero_Musical", typeof(string));
+    
+            var fecha_ConciertoParameter = fecha_Concierto.HasValue ?
+                new ObjectParameter("Fecha_Concierto", fecha_Concierto) :
+                new ObjectParameter("Fecha_Concierto", typeof(System.DateTime));
+    
+            var hora_ConciertoParameter = hora_Concierto.HasValue ?
+                new ObjectParameter("Hora_Concierto", hora_Concierto) :
+                new ObjectParameter("Hora_Concierto", typeof(System.TimeSpan));
+    
+            var paisParameter = pais != null ?
+                new ObjectParameter("Pais", pais) :
+                new ObjectParameter("Pais", typeof(string));
+    
+            var direccion_ConciertoParameter = direccion_Concierto != null ?
+                new ObjectParameter("Direccion_Concierto", direccion_Concierto) :
+                new ObjectParameter("Direccion_Concierto", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_REGISTRARCONCIERTO", nombre_BandaParameter, genero_MusicalParameter, fecha_ConciertoParameter, hora_ConciertoParameter, paisParameter, direccion_ConciertoParameter, rEGISTRADO, mENSAJE);
         }
     }
 }

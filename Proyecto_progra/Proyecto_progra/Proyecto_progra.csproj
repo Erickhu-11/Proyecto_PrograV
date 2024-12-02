@@ -150,9 +150,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Db.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Usuario.cs">
-      <DependentUpon>Db.tt</DependentUpon>
-    </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -328,6 +325,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\logica.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="SQLQuery1.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -342,6 +340,7 @@
     <Content Include="Views\Main\Mainpage.cshtml" />
     <Content Include="Views\Main\LoginAdmin.cshtml" />
     <Content Include="Views\Main\CrearConcierto.cshtml" />
+    <Content Include="Views\Main\BorrarConcierto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

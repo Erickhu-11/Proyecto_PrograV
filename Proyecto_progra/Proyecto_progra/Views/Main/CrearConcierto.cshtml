@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -7,35 +6,34 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
+    <title>CrearConcierto</title>
     <link href="~/Content/css/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/js/logica.js"></script>
 </head>
 <body>
     <div class="main-crear">
-        <button class="b">Regresar</button>
+        <button class="b" id="btnRegresar">Regresar</button>
         <div class="bubble">
-            <input type="text" placeholder="Código">
+            <input type="text" id="nombreBanda" placeholder="Nombre de la banda">
         </div>
         <div class="bubble">
-            <input type="text" placeholder="Nombre de la banda">
+            <input type="text" id="generoBanda" placeholder="Género de la banda">
         </div>
         <div class="bubble">
-            <input type="text" placeholder="Género de la banda">
+            <input type="date" id="fechaConcierto" placeholder="Fecha del concierto">
         </div>
         <div class="bubble">
-            <input type="text" placeholder="Fecha del concierto">
+            <input type="time" id="horaConcierto" placeholder="Hora del concierto">
         </div>
         <div class="bubble">
-            <input type="text" placeholder="Hora del concierto">
+            <input type="text" id="pais" placeholder="País donde se realiza">
         </div>
         <div class="bubble">
-            <input type="text" placeholder="País donde se realiza">
+            <input type="text" id="direccionConcierto" placeholder="Dirección del evento">
         </div>
-        <div class="bubble">
-            <input type="text" placeholder="Dirección del evento">
-        </div>  
-        <button class="b">Crear Concierto</button>
-
+        <button class="b" id="btnCrearConcierto">Crear Concierto</button>
     </div>
 </body>
 </html>
+

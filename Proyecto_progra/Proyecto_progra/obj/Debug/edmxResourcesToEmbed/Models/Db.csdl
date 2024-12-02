@@ -33,5 +33,15 @@
       <Parameter Name="CORREO" Mode="In" Type="String" />
       <Parameter Name="CLAVE" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="SP_REGISTRARCONCIERTO">
+      <Parameter Name="Nombre_Banda" Mode="In" Type="String" />
+      <Parameter Name="Genero_Musical" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Concierto" Mode="In" Type="DateTime" />
+      <Parameter Name="Hora_Concierto" Mode="In" Type="Time" />
+      <Parameter Name="Pais" Mode="In" Type="String" />
+      <Parameter Name="Direccion_Concierto" Mode="In" Type="String" />
+      <Parameter Name="REGISTRADO" Mode="InOut" Type="Boolean" />
+      <Parameter Name="MENSAJE" Mode="InOut" Type="String" />
+    </FunctionImport>
   </EntityContainer>
 </Schema>

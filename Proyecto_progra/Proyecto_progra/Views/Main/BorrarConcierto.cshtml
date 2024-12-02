@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>BorrarConcierto</title>
     <link href="~/Content/css/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/js/logica.js"></script>
 </head>
 <body>
     <div class="principal-textB">
@@ -17,13 +19,13 @@
         <h1>INTERNATIONAL</h1>
     </div>
     <div class="center">
-        <button class="b">
+        <button class="b" id="btnRegresar">
             Regresar
         </button>
         <div class="bubble">
-            <input type="text" placeholder="Código del concierto a eliminar">
+            <input type="text" id="codigoConcierto" placeholder="Código del concierto a eliminar">
         </div>
-        <button class="b">
+        <button class="b" id="btnEliminar">
             Eliminar
         </button>
     </div>

@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My band tour</title>
     <link href="~/Content/css/styles.css" rel="stylesheet" />
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/js/logica.js"></script>
 </head>
 <body>
     <!-- Menú lateral -->
@@ -35,11 +36,27 @@
         <!-- Icono -->
         <img src="~/Content/imgs/icon3.png" class="icon3" />
         <div class="container-input">
-            <input type="text" placeholder="Search">
+            <input type="text" id="searchBox" placeholder="Search">
         </div>
     </div>
     <!-- Conciertos -->
     <div class="Concerts">
+        <h2>Próximos Conciertos</h2>
+        <table id="tablaConciertos">
+            <thead>
+                <tr>
+                    <th>Nombre de la Banda</th>
+                    <th>Género</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>País</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se insertarán los datos -->
+            </tbody>
+        </table>
     </div>
 
 </body>

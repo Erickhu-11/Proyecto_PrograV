@@ -269,3 +269,20 @@ body {
 .principal-textB {
     margin-left: 120px;
 }
+
+#tablaConciertos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tablaConciertos th, #tablaConciertos td {
+     color: gray; /* Cambiar el color del texto */
+     border: 1px solid #ddd;
+     padding: 8px;
+     text-align: left;
+}
+
+#tablaConciertos th {
+     background-color: #f4f4f4;
+     font-weight: bold;
+}

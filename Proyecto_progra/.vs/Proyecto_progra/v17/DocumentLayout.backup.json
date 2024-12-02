@@ -3,40 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\source\\repos\\proyecto_progra\\proyecto_progra\\proyecto_progra\\views\\main\\crearconcierto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\crearconcierto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\source\\repos\\proyecto_progra\\proyecto_progra\\proyecto_progra\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\views\\main\\mainpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\mainpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\views\\main\\loginadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\loginadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\source\\repos\\proyecto_progra\\proyecto_progra\\proyecto_progra\\content\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\content\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\models\\concierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\models\\concierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|c:\\users\\erick\\source\\repos\\proyecto_progra\\proyecto_progra\\proyecto_progra\\scripts\\js\\logica.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\views\\main\\borrarconcierto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\borrarconcierto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\scripts\\js\\logica.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\scripts\\js\\logica.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\views\\main\\crearconcierto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\crearconcierto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\proyecto_progra\\views\\main\\loginadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2748F26F-D021-42E3-A903-BD181EA377E4}|Proyecto_progra\\Proyecto_progra.csproj|solutionrelative:proyecto_progra\\views\\main\\loginadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,90 +51,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CrearConcierto.cshtml",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\CrearConcierto.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\CrearConcierto.cshtml",
-              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\CrearConcierto.cshtml",
-              "RelativeToolTip": "Proyecto_progra\\Views\\Main\\CrearConcierto.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T22:02:17.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Web.config",
-              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Web.config",
-              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Web.config",
-              "RelativeToolTip": "Proyecto_progra\\Views\\Web.config",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-29T21:55:59.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "logica.js",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Scripts\\js\\logica.js",
-              "RelativeDocumentMoniker": "Proyecto_progra\\Scripts\\js\\logica.js",
-              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Scripts\\js\\logica.js",
-              "RelativeToolTip": "Proyecto_progra\\Scripts\\js\\logica.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-29T21:22:44.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Concierto.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Models\\Concierto.cs",
-              "RelativeDocumentMoniker": "Proyecto_progra\\Models\\Concierto.cs",
-              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Models\\Concierto.cs",
-              "RelativeToolTip": "Proyecto_progra\\Models\\Concierto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "MainController.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Controllers\\MainController.cs",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Controllers\\MainController.cs",
+              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Controllers\\MainController.cs",
+              "RelativeToolTip": "Proyecto_progra\\Controllers\\MainController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAAAK4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T20:32:20.48Z",
+              "WhenOpened": "2024-11-20T20:27:20.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Proyecto_progra\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Models\\Usuario.cs",
-              "RelativeToolTip": "Proyecto_progra\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T07:35:58.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginAdmin.cshtml",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\LoginAdmin.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\LoginAdmin.cshtml",
-              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\LoginAdmin.cshtml",
-              "RelativeToolTip": "Proyecto_progra\\Views\\Main\\LoginAdmin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T07:07:55.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Mainpage.cshtml",
               "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
               "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
               "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
               "RelativeToolTip": "Proyecto_progra\\Views\\Main\\Mainpage.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-26T07:25:08.511Z",
               "EditorCaption": ""
@@ -146,27 +77,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "Proyecto_progra\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "Proyecto_progra\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T20:15:35.797Z",
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Content\\css\\styles.css",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Content\\css\\styles.css",
+              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Content\\css\\styles.css",
+              "RelativeToolTip": "Proyecto_progra\\Content\\css\\styles.css",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAAABYBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-02T20:20:00.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainController.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Controllers\\MainController.cs",
-              "RelativeDocumentMoniker": "Proyecto_progra\\Controllers\\MainController.cs",
-              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Controllers\\MainController.cs",
-              "RelativeToolTip": "Proyecto_progra\\Controllers\\MainController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEsAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Concierto.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Models\\Concierto.cs",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Models\\Concierto.cs",
+              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Models\\Concierto.cs",
+              "RelativeToolTip": "Proyecto_progra\\Models\\Concierto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T20:27:20.571Z",
+              "WhenOpened": "2024-11-29T20:32:20.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BorrarConcierto.cshtml",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\BorrarConcierto.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\BorrarConcierto.cshtml",
+              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\BorrarConcierto.cshtml",
+              "RelativeToolTip": "Proyecto_progra\\Views\\Main\\BorrarConcierto.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T16:37:26.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "logica.js",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Scripts\\js\\logica.js",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Scripts\\js\\logica.js",
+              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Scripts\\js\\logica.js",
+              "RelativeToolTip": "Proyecto_progra\\Scripts\\js\\logica.js",
+              "ViewState": "AgIAAJkAAAAAAAAAAADwv8IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-29T21:22:44.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\LoginAdmin.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\LoginAdmin.cshtml",
+              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\LoginAdmin.cshtml",
+              "RelativeToolTip": "Proyecto_progra\\Views\\Main\\LoginAdmin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T07:07:55.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CrearConcierto.cshtml",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\CrearConcierto.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_progra\\Views\\Main\\CrearConcierto.cshtml",
+              "ToolTip": "C:\\Users\\erick\\source\\repos\\Proyecto_Progra\\Proyecto_progra\\Proyecto_progra\\Views\\Main\\CrearConcierto.cshtml",
+              "RelativeToolTip": "Proyecto_progra\\Views\\Main\\CrearConcierto.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T22:02:17.122Z",
               "EditorCaption": ""
             }
           ]
