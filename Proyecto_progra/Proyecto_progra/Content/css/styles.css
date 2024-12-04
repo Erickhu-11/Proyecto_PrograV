@@ -222,6 +222,7 @@ body {
     width: 90%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     max-width: 400px;
+    color: #9f7f54;
 }
 
 .main-crear input {
@@ -235,12 +236,13 @@ body {
 }
 
 .b{
-    font-size: 25px;
+    font-size: 15px;
     border-radius: 20px;
     color: #9f7f54;
     background-color: #0f0c0c;
     cursor: pointer;
     width: 200px;
+    height: 35px;
 }
 
 .center {
@@ -273,16 +275,26 @@ body {
 #tablaConciertos {
     width: 100%;
     border-collapse: collapse;
+    color: #9f7f54;
 }
 
 #tablaConciertos th, #tablaConciertos td {
-     color: gray; /* Cambiar el color del texto */
+     color: #9f7f54;
      border: 1px solid #ddd;
      padding: 8px;
      text-align: left;
 }
 
 #tablaConciertos th {
-     background-color: #f4f4f4;
+     background-color: transparent;
      font-weight: bold;
+     color: #9f7f54;
+}
+
+.Concerts h2 {
+    color: #9f7f54;
+}
+
+.input-container::after {
+    color: #9f7f54;
 }
