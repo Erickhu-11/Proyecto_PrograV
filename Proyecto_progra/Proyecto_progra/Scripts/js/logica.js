@@ -34,7 +34,7 @@
                 if (response.success) {
                     alert(response.message);
                     // Redirigir al usuario si el login es exitoso
-                    window.location.href = "/Main/CrearConcierto";
+                    window.location.href = "/Main/MainPageAdmin";
                 } else {
                     alert(response.message);
                 }
@@ -194,3 +194,14 @@ $(document).ready(function () {
 });
 
 
+function Agregar_btn() {
+    window.location.href = '/Main/CrearConcierto';
+}
+
+function Borrar_btn() {
+    window.location.href = '/Main/BorrarConcierto';
+}
+
+function Modificar_btn() {
+    window.location.href = '/Main/Modificar_Concierto';
+}
