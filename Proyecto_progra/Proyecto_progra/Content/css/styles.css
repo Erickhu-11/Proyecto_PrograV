@@ -6,7 +6,6 @@
 body {
     margin: 0;
     padding: 0;
-    -webkit-text-size-adjust: none;
     appearance: none;
     background-color: #b01a03;
 }
@@ -18,7 +17,11 @@ body {
 
 
 .main-content {
-    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto; 
     padding: 20px;
     max-width: 800px;
 }
@@ -29,6 +32,7 @@ body {
     top: 0;
     right: 0;
     padding: 10px;
+    background-color: transparent;
 }
 
 .icon3 {
@@ -38,15 +42,17 @@ body {
 }
 
 .Concerts {
-    position: relative;
-    top: 70px;
+    position: absolute; 
+    top: 50;
+    left: 19%;
     background-color: #0f0c0c;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 0; 
     width: 90%;
     max-width: 800px;
     height: 500px;
     text-align: center;
+}
 }
 
 .Login-button{
@@ -63,18 +69,17 @@ body {
 
 
 .container-input {
-    text-align: center;
     position: relative;
-    left: 33%;
-    top: 50px;
-    display: flex;
     background-color: #0f0c0c;
     border-radius: 20px;
     padding: 5px 15px;
     width: 90%;
-    max-width: 800px;
     width: 800px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    color: #9f7f54;
+    margin: 20px auto; 
+    display: flex; 
+    justify-content: center;
 }
 
 .container-input input {
@@ -85,6 +90,7 @@ body {
     color: #9f7f54;
     font-size: 16px;
     padding: 10px;
+    width: 700px;
     }
 
 .container-input input::placeholder {
