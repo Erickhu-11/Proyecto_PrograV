@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>MainPageAdmin</title>
     <link href="~/Content/css/styles.css" rel="stylesheet" />
+    <script src="~/Scripts/js/logica.js"></script>
 </head>
 <body>
     <!-- Menú lateral -->
@@ -27,12 +28,16 @@
             <h2>MY BAND TOUR</h2>
             <h1>INTERNATIONAL</h1>
         </div>
+        <div class="admin-buttons">
+            <button class="b" onclick="Agregar_btn()">Agregar Concierto</button>
+            <button class="b" onclick="Borrar_btn()">Borrar Concierto</button>
+            <button class="b" onclick="Modificar_btn()">Modificar Concierto</button>
+        </div>
         <!-- Texto del login -->
         <div class="Login-text">
-            <button class="Login-button">@Html.ActionLink("Login Admin", "LoginAdmin", "Main")</button>
+            <a>@Html.ActionLink("Login Admin", "LoginAdmin", "Main")</a>
         </div>
         <!-- Icono -->
-        <img src="~/Content/imgs/icon3.png" class="icon3" />
         <div class="container-input">
             <input type="text" id="searchBox" placeholder="Search">
         </div>
