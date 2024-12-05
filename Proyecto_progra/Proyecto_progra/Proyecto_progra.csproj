@@ -262,6 +262,9 @@
       <DependentUpon>Db.edmx</DependentUpon>
       <LastGenOutput>Db.cs</LastGenOutput>
     </Content>
+    <Content Include="obj\Debug\Proyecto_progra.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Proyecto_progra.dll" />
+    <Content Include="obj\Debug\Proyecto_progra.pdb" />
     <Content Include="obj\Debug\TempPE\Models.Modelo_Datos.Context.cs.dll" />
     <Content Include="obj\Debug\TempPE\Models.Modelo_Datos.cs.dll" />
     <Content Include="obj\Debug\TempPE\Models.Modelo_Datos.Designer.cs.dll" />
@@ -313,6 +316,11 @@
     <Content Include="Models\Db.edmx.diagram">
       <DependentUpon>Db.edmx</DependentUpon>
     </Content>
+    <Content Include="obj\Debug\Proyecto_progra.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\Db.ssdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\Db.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\Db.csdl" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -341,6 +349,8 @@
     <Content Include="Views\Main\LoginAdmin.cshtml" />
     <Content Include="Views\Main\CrearConcierto.cshtml" />
     <Content Include="Views\Main\BorrarConcierto.cshtml" />
+    <Content Include="Views\Main\MainPageAdmin.cshtml" />
+    <Content Include="Views\Main\Modificar_Concierto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
