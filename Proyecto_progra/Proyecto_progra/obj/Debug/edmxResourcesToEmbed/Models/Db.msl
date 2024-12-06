@@ -26,5 +26,7 @@
     <FunctionImportMapping FunctionImportName="SP_REGISTRARUSUARIO" FunctionName="ConciertosModel.Store.SP_REGISTRARUSUARIO" />
     <FunctionImportMapping FunctionImportName="SP_VALIDARUSUARIO" FunctionName="ConciertosModel.Store.SP_VALIDARUSUARIO" />
     <FunctionImportMapping FunctionImportName="SP_REGISTRARCONCIERTO" FunctionName="ConciertosModel.Store.SP_REGISTRARCONCIERTO" />
+    <FunctionImportMapping FunctionImportName="SP_ELIMINARCONCIERTO" FunctionName="ConciertosModel.Store.SP_ELIMINARCONCIERTO" />
+    <FunctionImportMapping FunctionImportName="SP_MODIFICARCONCIERTO" FunctionName="ConciertosModel.Store.SP_MODIFICARCONCIERTO" />
   </EntityContainerMapping>
 </Mapping>

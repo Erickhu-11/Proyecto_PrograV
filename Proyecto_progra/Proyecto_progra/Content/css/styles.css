@@ -53,18 +53,19 @@ body {
     }
 
 .Concerts {
-    position: absolute; 
-    top: 50;
-    left: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #0f0c0c;
     border-radius: 10px;
-    margin: 0; 
-    width: 90%;
-    max-width: 800px;
-    height: 500px;
+    margin: 20px auto;
+    padding: 20px; 
+    max-width: 800px; 
+    width: 90%; 
     text-align: center;
 }
-}
+
 
 .Login-button{
     background: none;

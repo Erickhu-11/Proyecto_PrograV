@@ -1,12 +1,26 @@
-﻿$(document).ready(function () {
-    $('#login_btn').on('click', function (e) {
-        e.preventDefault(); // Evitar el comportamiento por defecto del formulario
+﻿function Agregar_btn() {
+    window.location.href = '/Main/CrearConcierto';
+}
 
-        // Obtener los valores de los campos
+function Borrar_btn() {
+    window.location.href = '/Main/BorrarConcierto';
+}
+
+function Modificar_btn() {
+    window.location.href = '/Main/Modificar_Concierto';
+}
+
+function Salir_btn() {
+    window.location.href = '/Main/MainPage';
+}
+
+$(document).ready(function () {
+    $('#login_btn').on('click', function (e) {
+        e.preventDefault(); 
+
         const email = $('#email').val().trim();
         const password = $('#password').val().trim();
 
-        // Validar el correo y la contraseña
         if (!email) {
             alert("Por favor, ingrese su correo electrónico.");
             return;
@@ -22,9 +36,8 @@
             return;
         }
 
-        // Enviar los datos al servidor
         $.ajax({
-            url: '/Main/Login', // URL del método en tu controlador
+            url: '/Main/Login',
             type: 'POST',
             data: {
                 CORREO: email,
@@ -33,7 +46,6 @@
             success: function (response) {
                 if (response.success) {
                     alert(response.message);
-                    // Redirigir al usuario si el login es exitoso
                     window.location.href = "/Main/MainPageAdmin";
                 } else {
                     alert(response.message);
@@ -44,8 +56,6 @@
             }
         });
     });
-
-    // Validar formato del correo electrónico
     function validateEmail(email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
@@ -53,11 +63,9 @@
 });
 
 $(document).ready(function () {
-    // Evento para el botón "Crear Concierto"
     $('#btnCrearConcierto').click(function (e) {
-        e.preventDefault(); // Evita el comportamiento predeterminado del botón
+        e.preventDefault();
 
-        // Capturar los valores de los campos
         const nombreBanda = $('#nombreBanda').val();
         const generoBanda = $('#generoBanda').val();
         const fechaConcierto = $('#fechaConcierto').val();
@@ -65,15 +73,13 @@ $(document).ready(function () {
         const pais = $('#pais').val();
         const direccionConcierto = $('#direccionConcierto').val();
 
-        // Validar que todos los campos estén llenos
         if (!nombreBanda || !generoBanda || !fechaConcierto || !horaConcierto || !pais || !direccionConcierto) {
             alert('Por favor, complete todos los campos.');
             return;
         }
 
-        // Enviar los datos al servidor mediante AJAX
         $.ajax({
-            url: '/Main/AgregarConcierto', // Ruta del controlador
+            url: '/Main/AgregarConcierto',
             type: 'POST',
             data: {
                 nombre_Banda: nombreBanda,
@@ -85,9 +91,7 @@ $(document).ready(function () {
             },
             success: function (response) {
                 if (response.success) {
-                    alert(response.message); // Mostrar mensaje de éxito
-
-                    // Limpiar los campos del formulario
+                    alert(response.message);
                     $('#nombreBanda').val('');
                     $('#generoBanda').val('');
                     $('#fechaConcierto').val('');
@@ -95,7 +99,7 @@ $(document).ready(function () {
                     $('#pais').val('');
                     $('#direccionConcierto').val('');
                 } else {
-                    alert(response.message); // Mostrar mensaje de error del servidor
+                    alert(response.message);
                 }
             },
             error: function () {
@@ -104,22 +108,20 @@ $(document).ready(function () {
         });
     });
 
-    // Evento para el botón "Regresar"
-    $('#btnRegresar').click(function () {
-        window.location.href = '/Main/Mainpage'; // Redirigir a la página principal
-    });
+    //$('#btnRegresar').click(function () {
+    //    window.location.href = '/Main/Mainpage';
+    //});
 });
 
 $(document).ready(function () {
-    // Obtener la lista de conciertos
     $.ajax({
-        url: '/Main/ObtenerConciertos', // Ruta al método en el controlador
+        url: '/Main/ObtenerConciertos',
         type: 'GET',
         success: function (response) {
             if (response.success) {
                 const conciertos = response.data;
                 const tbody = $('#tablaConciertos tbody');
-                tbody.empty(); // Limpiar la tabla antes de insertar datos
+                tbody.empty();
 
                 conciertos.forEach(concierto => {
                     const row = `
@@ -144,7 +146,6 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    // Evento para filtrar la tabla en tiempo real
     $('#searchBox').on('keyup', function () {
         const value = $(this).val().toLowerCase();
         $('#tablaConciertos tbody tr').filter(function () {
@@ -154,54 +155,74 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    // Evento para el botón "Eliminar"
-    $('#btnEliminar').click(function (e) {
-        e.preventDefault(); // Evita el comportamiento predeterminado
-
-        // Obtener el código del concierto
-        const codigoConcierto = $('#codigoConcierto').val().trim();
+    $("#btnEliminar").click(function () {
+        const codigoConcierto = $("#codigoConcierto").val();
 
         if (!codigoConcierto) {
-            alert("Por favor, ingrese el código del concierto.");
+            $("#mensaje").text("Por favor, ingresa un código válido.").css("color", "red");
             return;
         }
 
-        // Enviar la solicitud de eliminación
         $.ajax({
-            url: '/Main/EliminarConcierto', // URL del método en tu controlador
+            url: '/Main/EliminarConcierto',
             type: 'POST',
-            data: {
-                codigo: codigoConcierto
-            },
+            data: JSON.stringify({ id: parseInt(codigoConcierto) }), 
+            contentType: 'application/json; charset=utf-8',
             success: function (response) {
                 if (response.success) {
                     alert(response.message);
-                    $('#codigoConcierto').val(''); // Limpiar el campo después de eliminar
                 } else {
-                    alert(response.message);
+                    alert("Error: " + response.message);
                 }
             },
             error: function () {
-                alert('Error al conectar con el servidor. Por favor, intente de nuevo.');
+                $("#mensaje").text("Ocurrió un error al intentar eliminar el concierto.").css("color", "red");
             }
         });
     });
 
-    // Evento para el botón "Regresar"
-    $('#btnRegresar').click(function () {
-        window.location.href = '/Main/Mainpage'; // Redirigir a la página principal
+    $("#btnRegresar").click(function () {
+        window.location.href = "/Main/MainpageAdmin";
     });
 });
 
+$(document).ready(function () {
+    $('#btnModificarConcierto').click(function () {
+        const idConcierto = $('#idConcierto').val();
+        const nombreBanda = $('#nombreBanda').val();
+        const generoBanda = $('#generoBanda').val();
+        const fechaConcierto = $('#fechaConcierto').val();
+        const horaConcierto = $('#horaConcierto').val();
+        const pais = $('#pais').val();
+        const direccionConcierto = $('#direccionConcierto').val();
 
-function Agregar_btn() {
-    window.location.href = '/Main/CrearConcierto';
-}
+        if (!idConcierto || !nombreBanda || !generoBanda || !fechaConcierto || !horaConcierto || !pais || !direccionConcierto) {
+            alert("Por favor, completa todos los campos.");
+            return;
+        }
 
-function Borrar_btn() {
-    window.location.href = '/Main/BorrarConcierto';
-}
-
-function Modificar_btn() {
-    window.location.href = '/Main/Modificar_Concierto';
-}
+        $.ajax({
+            url: '/Main/ModificarConcierto',
+            type: 'POST',
+            data: {
+                idConcierto: idConcierto,
+                nombreBanda: nombreBanda,
+                generoBanda: generoBanda,
+                fechaConcierto: fechaConcierto,
+                horaConcierto: horaConcierto,
+                pais: pais,
+                direccionConcierto: direccionConcierto
+            },
+            success: function (response) {
+                if (response.success) {
+                    alert(response.message);
+                } else {
+                    alert("Error: " + response.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                alert("Ocurrió un error al realizar la solicitud: " + error);
+            }
+        });
+    });
+});

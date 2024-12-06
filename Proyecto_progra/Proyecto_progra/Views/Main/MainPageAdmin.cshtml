@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>MainPageAdmin</title>
     <link href="~/Content/css/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="~/Scripts/js/logica.js"></script>
 </head>
 <body>
@@ -32,12 +33,8 @@
             <button class="b" onclick="Agregar_btn()">Agregar Concierto</button>
             <button class="b" onclick="Borrar_btn()">Borrar Concierto</button>
             <button class="b" onclick="Modificar_btn()">Modificar Concierto</button>
+            <button class="b" onclick="Salir_btn()">Salir de Administrador</button>
         </div>
-        <!-- Texto del login -->
-        <div class="Login-text">
-            <a>@Html.ActionLink("Login Admin", "LoginAdmin", "Main")</a>
-        </div>
-        <!-- Icono -->
         <div class="container-input">
             <input type="text" id="searchBox" placeholder="Search">
         </div>
@@ -56,9 +53,6 @@
                     <th>Dirección</th>
                 </tr>
             </thead>
-            <tbody>
-                <!-- Aquí se insertarán los datos -->
-            </tbody>
         </table>
     </div>
 

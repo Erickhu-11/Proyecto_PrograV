@@ -33,6 +33,14 @@ namespace Proyecto_progra.Controllers
         {
             return View();
         }
+        public ActionResult Modificar_Concierto()
+        {
+            return View();
+        }
+        public ActionResult MainPageAdmin()
+        {
+            return View();
+        }
 
         [HttpPost]
 
@@ -86,7 +94,6 @@ namespace Proyecto_progra.Controllers
         {
             try
             {
-                // Validar que los parámetros no sean nulos o vacíos
                 if (string.IsNullOrWhiteSpace(nombre_Banda) || string.IsNullOrWhiteSpace(genero_Musical) ||
                     !fecha_Concierto.HasValue || !hora_Concierto.HasValue ||
                     string.IsNullOrWhiteSpace(pais) || string.IsNullOrWhiteSpace(direccion_Concierto))
@@ -100,27 +107,14 @@ namespace Proyecto_progra.Controllers
 
                 using (var bd = new ConciertosEntities1())
                 {
-                    // Crear parámetros de salida
                     var registrado = new ObjectParameter("REGISTRADO", typeof(bool));
                     var mensaje = new ObjectParameter("MENSAJE", typeof(string));
 
-                    // Llamar al procedimiento almacenado
-                    bd.SP_REGISTRARCONCIERTO(
-                        nombre_Banda,
-                        genero_Musical,
-                        fecha_Concierto,
-                        hora_Concierto,
-                        pais,
-                        direccion_Concierto,
-                        registrado,
-                        mensaje
-                    );
+                    bd.SP_REGISTRARCONCIERTO(nombre_Banda,genero_Musical,fecha_Concierto,hora_Concierto,pais,direccion_Concierto,registrado,mensaje);
 
-                    // Obtener valores de salida
                     bool registradoValue = (bool)registrado.Value;
                     string mensajeValue = (string)mensaje.Value;
 
-                    // Retornar respuesta según el resultado del procedimiento almacenado
                     return Json(new
                     {
                         success = registradoValue,
@@ -130,7 +124,6 @@ namespace Proyecto_progra.Controllers
             }
             catch (Exception ex)
             {
-                // Manejo de errores
                 return Json(new
                 {
                     success = false,
@@ -144,7 +137,6 @@ namespace Proyecto_progra.Controllers
         {
             using (ConciertosEntities1 bd = new ConciertosEntities1())
             {
-                // Realizas la consulta sin formatear las fechas
                 var conciertos = bd.Concierto.Select(c => new
                 {
                     c.Nombre_Banda,
@@ -155,7 +147,6 @@ namespace Proyecto_progra.Controllers
                     c.Direccion_Concierto
                 }).ToList();
 
-                // Luego, formateas las fechas y horas después de la consulta
                 var conciertosFormateados = conciertos.Select(c => new
                 {
                     c.Nombre_Banda,
@@ -166,52 +157,82 @@ namespace Proyecto_progra.Controllers
                     c.Direccion_Concierto
                 }).ToList();
 
-                // Ahora puedes pasar estos conciertos formateados a tu vista o hacer lo que necesites con ellos
                 return Json(new
                 {
                     success = true,
-                    data = conciertosFormateados // Se devuelven los datos formateados
+                    data = conciertosFormateados
                 }, JsonRequestBehavior.AllowGet);
             }
         }
-        public JsonResult EliminarConcierto(int codigo)
+        [HttpPost]
+        public JsonResult EliminarConcierto(int id)
+        {
+            using (ConciertosEntities1 db = new ConciertosEntities1())
+            {
+                try
+                {
+                    var paramId = new SqlParameter("@ID", id);
+                    var paramEliminado = new SqlParameter
+                    {
+                        ParameterName = "@ELIMINADO",
+                        SqlDbType = System.Data.SqlDbType.Bit,
+                        Direction = System.Data.ParameterDirection.Output
+                    };
+                    var paramMensaje = new SqlParameter
+                    {
+                        ParameterName = "@MENSAJE",
+                        SqlDbType = System.Data.SqlDbType.VarChar,
+                        Size = 100,
+                        Direction = System.Data.ParameterDirection.Output
+                    };
+
+                    db.Database.ExecuteSqlCommand(
+                        "EXEC SP_ELIMINARCONCIERTO @ID, @ELIMINADO OUTPUT, @MENSAJE OUTPUT",
+                        paramId, paramEliminado, paramMensaje
+                    );
+
+                    bool eliminado = (bool)paramEliminado.Value;
+                    string mensaje = paramMensaje.Value.ToString();
+
+                    return Json(new
+                    {
+                        success = eliminado,
+                        message = mensaje
+                    });
+                }
+                catch (Exception ex)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "Ocurrió un error al intentar eliminar el concierto: " + ex.Message
+                    });
+                }
+            }
+        }
+
+        [HttpPost]
+        public JsonResult ModificarConcierto(int idConcierto, string nombreBanda, string generoBanda, DateTime fechaConcierto, TimeSpan horaConcierto, string pais, string direccionConcierto)
         {
             try
             {
-                using (ConciertosEntities1 db = new ConciertosEntities1()) // Asegúrate de usar tu DbContext
+                using (ConciertosEntities1 db = new ConciertosEntities1())
                 {
-                    // Buscar el concierto por el código
-                    var concierto = db.Concierto.FirstOrDefault(c => c.ID == codigo);
+                    var resultadoMensaje = new ObjectParameter("MENSAJE", typeof(string));
+                    var resultadoModificado = new ObjectParameter("MODIFICADO", typeof(bool));
 
-                    if (concierto == null)
-                    {
-                        return Json(new { success = false, message = "Concierto no encontrado." }, JsonRequestBehavior.AllowGet);
-                    }
+                    db.SP_MODIFICARCONCIERTO(idConcierto,nombreBanda,generoBanda,fechaConcierto,horaConcierto,pais,direccionConcierto,resultadoModificado,resultadoMensaje);
 
-                    // Eliminar el concierto
-                    db.Concierto.Remove(concierto);
-                    db.SaveChanges();
+                    bool modificado = (bool)resultadoModificado.Value;
+                    string mensaje = resultadoMensaje.Value.ToString();
 
-                    return Json(new { success = true, message = "Concierto eliminado exitosamente." }, JsonRequestBehavior.AllowGet);
+                    return Json(new { success = modificado, message = mensaje }, JsonRequestBehavior.AllowGet);
                 }
             }
             catch (Exception ex)
             {
-                return Json(new { success = false, message = "Ocurrió un error al intentar eliminar el concierto: " + ex.Message }, JsonRequestBehavior.AllowGet);
+                return Json(new { success = false, message = "Ocurrió un error al intentar modificar el concierto: " + ex.Message }, JsonRequestBehavior.AllowGet);
             }
         }
-
-
-        public ActionResult Modificar_Concierto()
-        {
-            return View();
-        }
-
-        public ActionResult MainPageAdmin()
-        {
-            return View();
-        }
-
-
     }
 }

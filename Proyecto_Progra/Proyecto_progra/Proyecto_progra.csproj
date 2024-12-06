@@ -150,6 +150,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Db.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\USUARIO.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -268,12 +271,6 @@
     <Content Include="obj\Debug\TempPE\Models.Modelo_Datos.Context.cs.dll" />
     <Content Include="obj\Debug\TempPE\Models.Modelo_Datos.cs.dll" />
     <Content Include="obj\Debug\TempPE\Models.Modelo_Datos.Designer.cs.dll" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.esm.js" />
-    <Content Include="Scripts\bootstrap.esm.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="obj\Debug\build.force" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\edmxResourcesToEmbed\Models\Modelo_Datos.csdl" />
@@ -321,18 +318,32 @@
     <Content Include="obj\Debug\edmxResourcesToEmbed\Models\Db.ssdl" />
     <Content Include="obj\Debug\edmxResourcesToEmbed\Models\Db.msl" />
     <Content Include="obj\Debug\edmxResourcesToEmbed\Models\Db.csdl" />
-    <None Include="Scripts\jquery-3.7.0.intellisense.js" />
-    <Content Include="Scripts\jquery-3.7.0.js" />
-    <Content Include="Scripts\jquery-3.7.0.min.js" />
-    <Content Include="Scripts\jquery-3.7.0.slim.js" />
-    <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\bootstrap\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap\jquery-3.7.0.min.map" />
+    <Content Include="Scripts\bootstrap\jquery-3.7.0.slim.min.map" />
+    <Content Include="Scripts\bootstrap\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.min.js" />
+    <None Include="Scripts\bootstrap\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\bootstrap\jquery-3.7.0.js" />
+    <Content Include="Scripts\bootstrap\jquery-3.7.0.min.js" />
+    <Content Include="Scripts\bootstrap\jquery-3.7.0.slim.js" />
+    <Content Include="Scripts\bootstrap\jquery-3.7.0.slim.min.js" />
+    <None Include="Scripts\bootstrap\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\bootstrap\jquery.validate.js" />
+    <Content Include="Scripts\bootstrap\jquery.validate.min.js" />
+    <Content Include="Scripts\bootstrap\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\bootstrap\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\bootstrap\modernizr-2.8.3.js" />
     <Content Include="Scripts\js\logica.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="SQLQuery1.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -357,14 +368,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
-    <Content Include="Scripts\bootstrap.esm.min.js.map" />
-    <Content Include="Scripts\bootstrap.esm.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
-    <Content Include="Scripts\jquery-3.7.0.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
